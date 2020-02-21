@@ -15,20 +15,28 @@ h1 {letter-spacing: 6px}
 	
 <div class="w3-top">
    <div class="w3-bar w3-white">
-     <a href="#home" class="w3-bar-item w3-button">Home</a>
-     <a href="#port" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
-     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-     <a href="https://www.flickr.com/photos/157847950@N05" class="w3-bar-item w3-button">Learn more</a>
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+     <a href="#home" class="w3-bar-item w3-button w3-hide-small">Home</a>
+     <a href="#port" class="w3-bar-item w3-button w3-hide-small w3-light-grey">Portfolio</a>
+     <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+     <a href="https://www.flickr.com/photos/157847950@N05" class="w3-bar-item w3-button w3-hide-small">Learn more</a>
    </div>
-</div>
 
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#port" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="https://www.flickr.com/photos/157847950@N05" class="w3-bar-item w3-button w3-padding-large">Learn more</a>
+  </div>
+</div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
 <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px" id="home">
-  <h1 class="w3-xlarge">PHOTOGRAPHER and Retoucher</h1>
+  <h1 class="w3-xlarge">PHOTOGRAPHER</h1>
+  <h1 class="w3-xlarge">RETOUCHER</h1>
   <h1>Dheerapat Tookkane</h1>
 </header>
 
@@ -57,6 +65,18 @@ h1 {letter-spacing: 6px}
   <a href="https://www.instagram.com/dpt_tkn/"><i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> <a href="https://flask.palletsprojects.com/" target="_blank" class="w3-hover-text-green">flask</a></p>
 </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
