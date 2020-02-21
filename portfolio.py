@@ -1,4 +1,5 @@
 import os
+import random
 from flask import Flask, render_template
 
 app = Flask(__name__, static_url_path='/static')
@@ -9,7 +10,9 @@ rights = ['right/' + file for file in rights]
 
 @app.route('/')
 def index():
-	return render_template('index.html', imgs=imgs, rights=rights)
+	imgrand = random.sample(imgs,k=10)
+	rightrand = random.sample(rights,k=10)
+	return render_template('index.html', imgrand=imgrand, rightrand=rightrand)
 	
 if __name__=='__main__':
 	app.run(debug=True)

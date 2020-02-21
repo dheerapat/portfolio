@@ -43,13 +43,13 @@ h1 {letter-spacing: 6px}
 <!-- Photo Grid -->
 <div class="w3-row-padding" style="margin-bottom:128px" id="port">
   <div class="w3-half">
-		{% for img in imgs %}
+		{% for img in imgrand %}
 		<img src="static/{{img}}" alt="{{imgL}}" style="width:100%">
 		{% endfor %}
   </div>
 
   <div class="w3-half">
-		{% for right in rights %}
+		{% for right in rightrand %}
 		<img src="static/{{right}}" alt="{{imgR}}" style="width:100%">
 		{% endfor %}
   </div>
