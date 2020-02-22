@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1>Nuna in The Garden</h1>
+</header>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding" style="margin-bottom:128px">
+  <div class="w3-half">
+		{% for nunaleft in nunals %}
+		<img src="static/album/nuna/{{nunaleft}}" style="width:100%">
+		{% endfor %}
+  </div>
+
+  <div class="w3-half">
+		{% for nunaright in nunars %}
+		<img src="static/album/nuna/{{nunaright}}" style="width:100%">
+		{% endfor %}
+  </div>
+</div>
+{% endblock %}
