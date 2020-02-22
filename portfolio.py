@@ -22,8 +22,8 @@ kaewrs = ['kaewright/' + file for file in kaewrs]
 
 @app.route('/')
 def index():
-	imgrand = random.sample(imgs,k=10)
-	rightrand = random.sample(rights,k=10)
+	imgrand = random.sample(imgs,k=5)
+	rightrand = random.sample(rights,k=5)
 	return render_template('index.html', imgrand=imgrand, rightrand=rightrand)
 
 @app.route('/album')
