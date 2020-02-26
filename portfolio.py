@@ -11,6 +11,7 @@ rights = ['right/' + file for file in rights]
 
 nunals = os.listdir('static/album/nuna/nunaleft')
 nunals = ['nunaleft/' + file for file in nunals]
+
 nunars = os.listdir('static/album/nuna/nunaright')
 nunars = ['nunaright/' + file for file in nunars]
 
@@ -29,7 +30,7 @@ def index():
 @app.route('/album')
 def album():
 	return render_template('album.html')
-	
+
 @app.route('/kaew')
 def kaew():
 	return render_template('kaew.html', kaewrs=kaewrs, kaewls=kaewls)
@@ -37,6 +38,6 @@ def kaew():
 @app.route('/nuna')
 def nuna():
 	return render_template('nuna.html', nunars=nunars, nunals=nunals)
-	
+
 if __name__=='__main__':
 	app.run(debug=True)
