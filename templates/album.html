@@ -21,21 +21,21 @@ h1 {letter-spacing: 6px}
 			<a href="{{ url_for('index') }}#port" class="w3-bar-item w3-button w3-hide-small w3-light-grey">Portfolio</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
 			<a href="{{ url_for('album') }}#head" class="w3-bar-item w3-button w3-hide-small">Album</a>
-			<a href="https://www.flickr.com/photos/157847950@N05" target="_blank" class="w3-bar-item w3-button w3-hide-small">Learn more</a>
+			<a href="{{ url_for('learn') }}" class="w3-bar-item w3-button w3-hide-small">Learn more</a>
 	</div>
 	<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
 		<a href="{{ url_for('index') }}#home" class="w3-bar-item w3-button w3-padding-large">Home</a>
 		<a href="{{ url_for('index') }}#port" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
 		<a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
 		<a href="{{ url_for('album') }}#head" class="w3-bar-item w3-button w3-padding-large">Album</a>
-		<a href="https://www.flickr.com/photos/157847950@N05" target="_blank" class="w3-bar-item w3-button w3-padding-large">Learn more</a>
+		<a href="{{ url_for('learn') }}" class="w3-bar-item w3-button w3-padding-large">Learn more</a>
 	</div>
 </div>
 <!--End navigation bar-->
 
 <!--Page content-->
 <div class="w3-content" style="max-width:1500px">
-	
+
 <!-- Header -->
 <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
   <h1>My Collections</h1>
@@ -56,20 +56,20 @@ h1 {letter-spacing: 6px}
 
 </div>
 
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact"> 
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact">
   <p>Contact me via</p>
   <a href="https://www.facebook.com/shutter.releaser/"><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
   <a href="https://www.instagram.com/shutter.releaser.studio/"><i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> <a href="https://flask.palletsprojects.com/" target="_blank" class="w3-hover-text-green">flask</a></p>
 </footer>
 
-<!--Toggle menu function-->	
+<!--Toggle menu function-->
 <script>
 function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }

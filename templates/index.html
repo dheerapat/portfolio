@@ -12,7 +12,7 @@ h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
-	
+
 <div class="w3-top">
    <div class="w3-bar w3-white">
    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -20,7 +20,7 @@ h1 {letter-spacing: 6px}
      <a href="#port" class="w3-bar-item w3-button w3-hide-small w3-light-grey">Portfolio</a>
      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
      <a href="{{ url_for('album') }}" class="w3-bar-item w3-button w3-hide-small">Album</a>
-     <a href="https://www.flickr.com/photos/157847950@N05" target="_blank" class="w3-bar-item w3-button w3-hide-small">Learn more</a>
+     <a href="{{ url_for('learn') }}" class="w3-bar-item w3-button w3-hide-small">Learn more</a>
    </div>
 
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -28,7 +28,7 @@ h1 {letter-spacing: 6px}
     <a href="#port" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
     <a href="{{ url_for('album') }}" class="w3-bar-item w3-button w3-padding-large">Album</a>
-    <a href="https://www.flickr.com/photos/157847950@N05" target="_blank" class="w3-bar-item w3-button w3-padding-large">Learn more</a>
+    <a href="{{ url_for('learn') }}" class="w3-bar-item w3-button w3-padding-large">Learn more</a>
   </div>
 </div>
 
@@ -61,7 +61,7 @@ h1 {letter-spacing: 6px}
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact"> 
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large" id="contact">
   <p>Contact me via</p>
   <a href="https://www.facebook.com/shutter.releaser/"><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
   <a href="https://www.instagram.com/shutter.releaser.studio/"><i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
@@ -74,7 +74,7 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }

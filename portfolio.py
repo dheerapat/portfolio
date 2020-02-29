@@ -39,5 +39,9 @@ def kaew():
 def nuna():
 	return render_template('nuna.html', nunars=nunars, nunals=nunals)
 
+@app.route('/learn')
+def learn():
+	return render_template('learn.html')
+
 if __name__=='__main__':
 	app.run(debug=True)
