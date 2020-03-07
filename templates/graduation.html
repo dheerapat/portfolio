@@ -3,23 +3,23 @@
 {% block content %}
 <!-- Header -->
 <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-  <h1>Kaew at The Royal Palace</h1>
+  <h1>Graduation</h1>
   <p>
-	  follow her at  <a href="https://www.instagram.com/pntppn/"><i class="fa fa-instagram w3-hover-opacity w3-large"></i></a>
+	  All of my client's graduation images.
   </p>
 </header>
 
 <!-- Photo Grid -->
 <div class="w3-row-padding" style="margin-bottom:128px">
   <div class="w3-half">
-		{% for kaewleft in kaewls %}
-		<img src="static/album/kaew/{{ kaewleft }}" style="width:100%">
+		{% for left in gradls %}
+		<img src="static/album/graduate/{{ left }}" style="width:100%">
 		{% endfor %}
   </div>
 
   <div class="w3-half">
-		{% for kaewright in kaewrs %}
-		<img src="static/album/kaew/{{ kaewright }}" style="width:100%">
+		{% for right in gradrs %}
+		<img src="static/album/graduate/{{ right }}" style="width:100%">
 		{% endfor %}
   </div>
 </div>
